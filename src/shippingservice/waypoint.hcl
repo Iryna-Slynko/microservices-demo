@@ -1,6 +1,6 @@
 project = "microservices-demo"
 
-app "shippingservice" {
+app "cartservice" {
   path = "."
 
   build {
@@ -10,7 +10,7 @@ app "shippingservice" {
     }
     registry {
       use "docker" {
-        image = "tudfinalproject/shippingservice"
+        image = "tudfinalproject/cartservice"
         tag   = "latest"
       }
     }
@@ -21,6 +21,7 @@ app "shippingservice" {
       DISABLE_DEBUGGER = "1"
       DISABLE_PROFILER = "1"
       DISABLE_TRACING = "1"
+      REDIS_ADDR = "redis:6379"
     }
   }
 
@@ -32,13 +33,13 @@ app "shippingservice" {
         container {
           port {
             name = "http"
-            port = 50051
+            port = 7070
           }
         }
       }
 
       cpu {
-        request = "250m"
+        request = "200m"
         limit   = "500m"
       }
 
