@@ -1,7 +1,8 @@
 project = "microservices-demo"
 
-app "recommendationservice" {
+app "paymentservice" {
   path = "."
+
 
   build {
     use "docker" {
@@ -10,18 +11,9 @@ app "recommendationservice" {
     }
     registry {
       use "docker" {
-        image = "tudfinalproject/recommendationservice"
+        image = "tudfinalproject/paymentservice"
         tag   = "latest"
       }
-    }
-  }
-
-  config {
-    env = {
-      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
-      DISABLE_DEBUGGER = "1"
-      DISABLE_PROFILER = "1"
-      DISABLE_TRACING = "1"
     }
   }
 
@@ -33,7 +25,7 @@ app "recommendationservice" {
         container {
           port {
             name = "http"
-            port = 8080
+            port = 50051
           }
         }
       }

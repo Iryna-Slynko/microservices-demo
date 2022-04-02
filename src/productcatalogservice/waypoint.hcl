@@ -16,6 +16,15 @@ app "productcatalogservice" {
     }
   }
 
+  config {
+    env = {
+      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
+      DISABLE_DEBUGGER = "1"
+      DISABLE_PROFILER = "1"
+      DISABLE_TRACING = "1"
+    }
+  }
+
   deploy {
     use "kubernetes" {
       namespace = "waypoint-demo"

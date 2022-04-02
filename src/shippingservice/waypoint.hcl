@@ -16,6 +16,14 @@ app "shippingservice" {
     }
   }
 
+  config {
+    env = {
+      DISABLE_DEBUGGER = "1"
+      DISABLE_PROFILER = "1"
+      DISABLE_TRACING = "1"
+    }
+  }
+
   deploy {
     use "kubernetes" {
       namespace = "waypoint-demo"
