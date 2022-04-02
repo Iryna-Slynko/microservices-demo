@@ -35,7 +35,6 @@ app "frontend" {
   deploy {
     use "kubernetes" {
       namespace = "waypoint-demo"
-      load_balancer = true
 
       pod {
         container {
@@ -56,6 +55,12 @@ app "frontend" {
         max_replicas = 5
         cpu_percent  = 20
       }
+    }
+  }
+
+  release {
+    use "kubernetes" {
+      load_balancer = true
     }
   }
 }
