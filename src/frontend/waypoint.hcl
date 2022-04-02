@@ -22,13 +22,13 @@ app "frontend" {
       DISABLE_DEBUGGER = "1"
       DISABLE_PROFILER = "1"
       DISABLE_TRACING = "1"
-      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
-      CURRENCY_SERVICE_ADDR = "currencyservice"
-      CART_SERVICE_ADDR = "cartservice"
-      RECOMMENDATION_SERVICE_ADDR = "recommendationservice"
-      SHIPPING_SERVICE_ADDR = "shippingservice"
-      CHECKOUT_SERVICE_ADDR = "checkoutservice"
-      AD_SERVICE_ADDR = "adservice"
+      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice:80"
+      CURRENCY_SERVICE_ADDR = "currencyservice:80"
+      CART_SERVICE_ADDR = "cartservice:80"
+      RECOMMENDATION_SERVICE_ADDR = "recommendationservice:80"
+      SHIPPING_SERVICE_ADDR = "shippingservice:80"
+      CHECKOUT_SERVICE_ADDR = "checkoutservice:80"
+      AD_SERVICE_ADDR = "adservice:80"
     }
   }
 

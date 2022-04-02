@@ -22,12 +22,12 @@ app "checkoutservice" {
       DISABLE_DEBUGGER = "1"
       DISABLE_PROFILER = "1"
       DISABLE_TRACING = "1"
-      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
-      SHIPPING_SERVICE_ADDR = "shippingservice"
-      PAYMENT_SERVICE_ADDR = "paymentservice"
-      EMAIL_SERVICE_ADDR = "emailservice"
-      CURRENCY_SERVICE_ADDR = "currencyservice"
-      CART_SERVICE_ADDR = "cartservice"
+      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice:80"
+      SHIPPING_SERVICE_ADDR = "shippingservice:80"
+      PAYMENT_SERVICE_ADDR = "paymentservice:80"
+      EMAIL_SERVICE_ADDR = "emailservice:80"
+      CURRENCY_SERVICE_ADDR = "currencyservice:80"
+      CART_SERVICE_ADDR = "cartservice:80"
     }
   }
 
