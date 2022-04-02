@@ -18,7 +18,7 @@ app "recommendationservice" {
 
   config {
     env = {
-      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
+      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice:80"
       DISABLE_DEBUGGER = "1"
       DISABLE_PROFILER = "1"
       DISABLE_TRACING = "1"
