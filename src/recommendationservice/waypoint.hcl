@@ -16,6 +16,12 @@ app "recommendationservice" {
     }
   }
 
+  config {
+    env = {
+      PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
+    }
+  }
+
   deploy {
     use "kubernetes" {
       namespace = "waypoint-demo"
@@ -38,10 +44,6 @@ app "recommendationservice" {
         min_replicas = 1
         max_replicas = 5
         cpu_percent  = 20
-      }
-
-      static_environment {
-        PRODUCT_CATALOG_SERVICE_ADDR = "productcatalogservice"
       }
     }
   }
