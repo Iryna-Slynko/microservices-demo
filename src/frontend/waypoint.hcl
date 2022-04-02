@@ -61,6 +61,7 @@ app "frontend" {
   release {
     use "kubernetes" {
       load_balancer = true
+      namespace = "waypoint-demo"
     }
   }
 }
