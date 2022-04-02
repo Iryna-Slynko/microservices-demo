@@ -35,6 +35,7 @@ app "frontend" {
   deploy {
     use "kubernetes" {
       namespace = "waypoint-demo"
+      load_balancer = true
 
       pod {
         container {
