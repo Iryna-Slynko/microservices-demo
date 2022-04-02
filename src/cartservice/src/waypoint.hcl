@@ -33,7 +33,7 @@ app "cartservice" {
         container {
           port {
             name = "http"
-            port = 50051
+            port = 7070
           }
         }
       }
