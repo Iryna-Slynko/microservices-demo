@@ -1,6 +1,6 @@
 project = "microservices-demo"
 
-app "paymentservice" {
+app "checkoutservice" {
   path = "."
 
 
@@ -11,7 +11,7 @@ app "paymentservice" {
     }
     registry {
       use "docker" {
-        image = "tudfinalproject/paymentservice"
+        image = "tudfinalproject/checkoutservice"
         tag   = "latest"
       }
     }
