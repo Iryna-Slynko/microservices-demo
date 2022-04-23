@@ -37,7 +37,7 @@ app "adservice" {
       autoscale {
         min_replicas = 1
         max_replicas = 5
-        cpu_percent  = 20
+        cpu_percent  = 90
       }
     }
   }

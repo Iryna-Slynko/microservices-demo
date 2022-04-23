@@ -29,6 +29,7 @@ app "recommendationservice" {
     use "kubernetes" {
       namespace = "waypoint-demo"
 
+      probe_path = "/"
       pod {
         container {
           port {
